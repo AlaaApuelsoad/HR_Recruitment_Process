@@ -1,0 +1,39 @@
+-- create table department HR Recruitment Process
+
+CREATE TABLE BPM.Department_List ( 
+id INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY, 
+code varchar(10),
+department VARCHAR(100)
+  );
+
+
+  -- Insert data
+INSERT INTO BPM.Department_List (code,department) VALUES
+(1, 'Marketing'),
+(2, 'Finance'),
+(3, 'Engineering'),
+(4, 'Professional Services'),
+(5, 'HR');
+
+
+-- create table job_level HR Recruitment Process
+
+CREATE TABLE BPM.Job_Level ( 
+id INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY, 
+code varchar(10),
+job_level VARCHAR(100)
+ );
+
+
+  -- Insert data
+INSERT INTO BPM.Job_Level (code, job_level) VALUES
+(1, 'jr Software Engineer'),
+(2, 'sr Software Engineer'),
+(3, 'lead Software Engineer'),
+(4, 'jr HR'),
+(5, 'sr HR'),
+(6, 'lead HR'),
+(7, 'sales'),
+(8, 'sales supervisor'),
+(9, 'service manager'),
+(10, 'accountant');
